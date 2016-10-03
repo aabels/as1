@@ -32,8 +32,8 @@ public class HabitList implements Serializable {
         return habitList;
     }
 
-    public void addHabit(Habit testHabit) {
-        habitList.add(testHabit);
+    public void addHabit(Habit habit) {
+        habitList.add(habit);
         notifyListeners();
     }
 
@@ -44,8 +44,8 @@ public class HabitList implements Serializable {
         }
     }
 
-    public void deleteHabit(Habit testHabit) {
-        habitList.remove(testHabit);
+    public void deleteHabit(Habit habit) {
+        habitList.remove(habit);
         notifyListeners();
     }
 
@@ -57,8 +57,8 @@ public class HabitList implements Serializable {
         return habitList.size();
     }
 
-    public boolean contains(Habit testHabit) {
-        return habitList.contains(testHabit);
+    public boolean contains(Habit habit) {
+        return habitList.contains(habit);
     }
 
     public void addHabitListener(HabitListener l) {
